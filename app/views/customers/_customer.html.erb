@@ -1,0 +1,17 @@
+<div class="column">
+  <div class="card">
+    <% if customer.image.present? %>
+      <div class="card-image">
+        <figure class="image">
+          <%= image_tag customer.image%>
+        </figure>
+      </div>
+    <% end %>
+
+    <div class="card-content">
+      <p class="title">
+        <%= customer.name %>
+      </p>
+    </div>
+  </div>
+</div>
